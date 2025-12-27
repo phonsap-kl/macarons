@@ -8,21 +8,16 @@
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
 
-    <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     
     <style>
@@ -73,11 +68,20 @@
                 transform: translateY(-20px) rotate(10deg); 
             }
         }
+
+        /* เพิ่ม hover effect เล็กน้อยให้รูปใน Gallery ดูแพงขึ้น */
+        .portfolio-item .position-relative {
+            border-radius: 15px;
+            transition: 0.5s;
+        }
+        .portfolio-item:hover .position-relative {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(219, 39, 119, 0.1);
+        }
     </style>
 </head>
 
 <body>
-    <!-- Topbar Start -->
     <div class="container-fluid bg-primary py-3 d-none d-md-block">
         <div class="container">
             <div class="row">
@@ -90,15 +94,11 @@
             </div>
         </div>
     </div>
-    <!-- Topbar End -->
-
-
-    <!-- Navbar Start -->
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
                 <a href="index.html" class="navbar-brand d-block d-lg-none">
-                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">i</span>CREAM</h1>
+                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">M</span>acarons</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -121,11 +121,7 @@
             </nav>
         </div>
     </div>
-    <!-- Navbar End -->
-
-
-    <!-- Header Start -->
-    <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px;">
+    <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 0;">
         <div class="container text-center py-5">
             <h1 class="text-white display-3 mt-lg-5">Gallery</h1>
             <div class="d-inline-flex align-items-center text-white">
@@ -135,25 +131,21 @@
             </div>
         </div>
     </div>
-    <!-- Header End -->
-
-
-    <!-- Portfolio Start -->
     <div class="container-fluid py-5 px-0">
         <div class="container py-5">
             <div class="row justify-content-center">
             </div>
             
-            <div class="row m-0 portfolio-container">
-                <div class="col-lg-4 col-md-6 p-0 portfolio-item first">
-                    <div class="position的相对 overflow-hidden">
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
                         <a class="portfolio-btn" href="img/portfolio-1.jpg" data-lightbox="portfolio">
                             <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 p-0 portfolio-item second">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
                         <a class="portfolio-btn" href="img/portfolio-2.jpg" data-lightbox="portfolio">
@@ -161,7 +153,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 p-0 portfolio-item third">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
                         <a class="portfolio-btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">
@@ -169,7 +161,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 p-0 portfolio-item first">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
                         <a class="portfolio-btn" href="img/portfolio-5.jpg" data-lightbox="portfolio">
@@ -177,7 +169,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 p-0 portfolio-item second">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
                         <a class="portfolio-btn" href="img/portfolio-4.jpg" data-lightbox="portfolio">
@@ -185,7 +177,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 p-0 portfolio-item third">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
                         <a class="portfolio-btn" href="img/portfolio-6.jpg" data-lightbox="portfolio">
@@ -196,17 +188,9 @@
             </div>
         </div>
     </div>
-    <!-- Portfolio End -->
-
-
-    
-
-
-    <!-- Back to Top -->
     <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -215,22 +199,18 @@
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
     
     <script>
         // เพิ่มไอคอนสีชมพูลอยได้
         document.addEventListener('DOMContentLoaded', function() {
-            // สร้าง container สำหรับไอคอน
             const iconContainer = document.createElement('div');
             iconContainer.className = 'floating-icons';
             document.body.appendChild(iconContainer);
             
-            // ไอคอนสีชมพูต่างๆ (เหมือนโค้ดแรก)
             const pinkIcons = [
                 { symbol: '❤️', name: 'heart' },
                 { symbol: '⭐', name: 'star' },
@@ -239,47 +219,39 @@
                 { symbol: '🌸', name: 'flower' }
             ];
             
-            // เพิ่มไอคอน 5 อัน (เหมือนโค้ดแรก)
             pinkIcons.forEach((icon, index) => {
                 const iconElement = document.createElement('div');
                 iconElement.className = 'floating-icon';
                 iconElement.textContent = icon.symbol;
                 iconElement.style.fontSize = '2rem';
                 
-                // ตำแหน่งเหมือนโค้ดแรก
                 switch(index) {
-                    case 0: // heart
+                    case 0:
                         iconElement.style.top = '10%';
                         iconElement.style.left = '5%';
                         iconElement.style.animationDelay = '0s';
                         break;
-                    case 1: // star
+                    case 1:
                         iconElement.style.top = '20%';
                         iconElement.style.right = '10%';
-                        iconElement.style.left = 'auto';
                         iconElement.style.animationDelay = '1s';
                         break;
-                    case 2: // cookie
+                    case 2:
                         iconElement.style.bottom = '30%';
                         iconElement.style.left = '15%';
-                        iconElement.style.top = 'auto';
                         iconElement.style.animationDelay = '2s';
                         break;
-                    case 3: // sparkle
+                    case 3:
                         iconElement.style.bottom = '20%';
                         iconElement.style.right = '5%';
-                        iconElement.style.left = 'auto';
-                        iconElement.style.top = 'auto';
                         iconElement.style.animationDelay = '3s';
                         break;
-                    case 4: // flower
+                    case 4:
                         iconElement.style.top = '40%';
                         iconElement.style.right = '20%';
-                        iconElement.style.left = 'auto';
                         iconElement.style.animationDelay = '4s';
                         break;
                 }
-                
                 iconContainer.appendChild(iconElement);
             });
         });

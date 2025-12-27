@@ -8,21 +8,16 @@
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
 
-    <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     
     <style>
@@ -74,11 +69,15 @@
                 transform: translateY(-20px);
             }
         }
+
+        /* เพิ่ม Cursor ให้รู้ว่ากดได้ */
+        .service-img img {
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body>
-    <!-- Topbar Start -->
     <div class="container-fluid bg-primary py-3 d-none d-md-block">
         <div class="container">
             <div class="row">
@@ -91,15 +90,11 @@
             </div>
         </div>
     </div>
-    <!-- Topbar End -->
-
-
-    <!-- Navbar Start -->
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
                 <a href="index.html" class="navbar-brand d-block d-lg-none">
-                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">i</span>CREAM</h1>
+                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">M</span>acarons</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -122,10 +117,6 @@
             </nav>
         </div>
     </div>
-    <!-- Navbar End -->
-
-
-    <!-- Header Start -->
     <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px;">
         <div class="container text-center py-5">
             <h1 class="text-white display-3 mt-lg-5">Menu</h1>
@@ -136,139 +127,120 @@
             </div>
         </div>
     </div>
-    <!-- Header End -->
-
-
-    <!-- Services Start -->
-    <!-- ====== TITLE ====== -->
-<div class="container-fluid py-5">
-    <div class="container py-4">
-        <div class="d-flex justify-content-center align-items-center">
-            <h1 class="m-0 mt-n4 display-4 text-primary">
-                Daily Special Menu
-            </h1>
+    <div class="container-fluid py-5">
+        <div class="container py-4">
+            <div class="d-flex justify-content-center align-items-center">
+                <h1 class="m-0 mt-n4 display-4 text-primary">
+                    Daily Special Menu
+                </h1>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- ====== CAROUSEL SECTION ====== -->
-<div class="container-fluid pb-4">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-12">
-                <div class="owl-carousel service-carousel pb-3">
+    <div class="container-fluid pb-4">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="owl-carousel service-carousel pb-3">
 
-                    <div class="service-item">
-                        <div class="service-img mx-auto">
-                            <img class="rounded-circle w-100 h-100 bg-light p-3"
-                                 src="img/service-7.jpg"
-                                 style="object-fit: cover;">
+                        <div class="service-item">
+                            <div class="service-img mx-auto">
+                                <a href="img/service-7.jpg" data-lightbox="daily-special">
+                                    <img class="rounded-circle w-100 h-100 bg-light p-3" src="img/service-7.jpg" style="object-fit: cover;">
+                                </a>
+                            </div>
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
+                                <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Sunday</h5>
+                                <p>วันสบาย ๆ กับความหวานละมุนใจ</p>
+                            </div>
                         </div>
-                        <div class="position-relative text-center bg-light rounded p-4 pb-5"
-                             style="margin-top: -75px;">
-                            <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Sunday</h5>
-                            <p>วันสบาย ๆ กับความหวานละมุนใจ</p>
+
+                        <div class="service-item">
+                            <div class="service-img mx-auto">
+                                <a href="img/service-1.jpg" data-lightbox="daily-special">
+                                    <img class="rounded-circle w-100 h-100 bg-light p-3" src="img/service-1.jpg" style="object-fit: cover;">
+                                </a>
+                            </div>
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
+                                <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Monday</h5>
+                                <p>เริ่มต้นสัปดาห์ด้วยความหวานนิด ๆ ให้ใจละมุน</p>
+                            </div>
                         </div>
+
+                        <div class="service-item">
+                            <div class="service-img mx-auto">
+                                <a href="img/service-2.jpg" data-lightbox="daily-special">
+                                    <img class="rounded-circle w-100 h-100 bg-light p-3" src="img/service-2.jpg" style="object-fit: cover;">
+                                </a>
+                            </div>
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
+                                <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Tuesday</h5>
+                                <p>เติมพลังระหว่างวัน ด้วยความน่ารักหนึ่งชิ้น</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item">
+                            <div class="service-img mx-auto">
+                                <a href="img/service-3.jpg" data-lightbox="daily-special">
+                                    <img class="rounded-circle w-100 h-100 bg-light p-3" src="img/service-3.jpg" style="object-fit: cover;">
+                                </a>
+                            </div>
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
+                                <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Wednesday</h5>
+                                <p>ครึ่งสัปดาห์แล้ว อย่าลืมให้รางวัลตัวเอง</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item">
+                            <div class="service-img mx-auto">
+                                <a href="img/service-4.jpg" data-lightbox="daily-special">
+                                    <img class="rounded-circle w-100 h-100 bg-light p-3" src="img/service-4.jpg" style="object-fit: cover;">
+                                </a>
+                            </div>
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
+                                <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Thursday</h5>
+                                <p>อีกนิดเดียวก็วันศุกร์ เพิ่มความหวานไว้รอก่อน</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item">
+                            <div class="service-img mx-auto">
+                                <a href="img/service-5.jpg" data-lightbox="daily-special">
+                                    <img class="rounded-circle w-100 h-100 bg-light p-3" src="img/service-5.jpg" style="object-fit: cover;">
+                                </a>
+                            </div>
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
+                                <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Friday</h5>
+                                <p>ความสุขเริ่มต้นจากของหวาน</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item">
+                            <div class="service-img mx-auto">
+                                <a href="img/service-6.jpg" data-lightbox="daily-special">
+                                    <img class="rounded-circle w-100 h-100 bg-light p-3" src="img/service-6.jpg" style="object-fit: cover;">
+                                </a>
+                            </div>
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
+                                <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Saturday</h5>
+                                <p>วันสบาย ๆ กับรสชาติหวานอมเปรี้ยว</p>
+                            </div>
+                        </div>
+
                     </div>
-
-                    <div class="service-item">
-                        <div class="service-img mx-auto">
-                            <img class="rounded-circle w-100 h-100 bg-light p-3"
-                                 src="img/service-1.jpg"
-                                 style="object-fit: cover;">
-                        </div>
-                        <div class="position-relative text-center bg-light rounded p-4 pb-5"
-                             style="margin-top: -75px;">
-                            <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Monday</h5>
-                            <p>เริ่มต้นสัปดาห์ด้วยความหวานนิด ๆ ให้ใจละมุน</p>
-                        </div>
-                    </div>
-
-                    <div class="service-item">
-                        <div class="service-img mx-auto">
-                            <img class="rounded-circle w-100 h-100 bg-light p-3"
-                                 src="img/service-2.jpg"
-                                 style="object-fit: cover;">
-                        </div>
-                        <div class="position-relative text-center bg-light rounded p-4 pb-5"
-                             style="margin-top: -75px;">
-                            <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Tuesday</h5>
-                            <p>เติมพลังระหว่างวัน ด้วยความน่ารักหนึ่งชิ้น</p>
-                        </div>
-                    </div>
-
-                    <div class="service-item">
-                        <div class="service-img mx-auto">
-                            <img class="rounded-circle w-100 h-100 bg-light p-3"
-                                 src="img/service-3.jpg"
-                                 style="object-fit: cover;">
-                        </div>
-                        <div class="position-relative text-center bg-light rounded p-4 pb-5"
-                             style="margin-top: -75px;">
-                            <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Wednesday</h5>
-                            <p>ครึ่งสัปดาห์แล้ว อย่าลืมให้รางวัลตัวเอง</p>
-                        </div>
-                    </div>
-
-                    <div class="service-item">
-                        <div class="service-img mx-auto">
-                            <img class="rounded-circle w-100 h-100 bg-light p-3"
-                                 src="img/service-4.jpg"
-                                 style="object-fit: cover;">
-                        </div>
-                        <div class="position-relative text-center bg-light rounded p-4 pb-5"
-                             style="margin-top: -75px;">
-                            <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Thursday</h5>
-                            <p>อีกนิดเดียวก็วันศุกร์ เพิ่มความหวานไว้รอก่อน</p>
-                        </div>
-                    </div>
-
-                    <div class="service-item">
-                        <div class="service-img mx-auto">
-                            <img class="rounded-circle w-100 h-100 bg-light p-3"
-                                 src="img/service-5.jpg"
-                                 style="object-fit: cover;">
-                        </div>
-                        <div class="position-relative text-center bg-light rounded p-4 pb-5"
-                             style="margin-top: -75px;">
-                            <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Friday</h5>
-                            <p>ความสุขเริ่มต้นจากของหวาน</p>
-                        </div>
-                    </div>
-
-                    <div class="service-item">
-                        <div class="service-img mx-auto">
-                            <img class="rounded-circle w-100 h-100 bg-light p-3"
-                                 src="img/service-6.jpg"
-                                 style="object-fit: cover;">
-                        </div>
-                        <div class="position-relative text-center bg-light rounded p-4 pb-5"
-                             style="margin-top: -75px;">
-                            <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Saturday</h5>
-                            <p>วันสบาย ๆ กับรสชาติหวานอมเปรี้ยว</p>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- ====== FIX SPACE BOTTOM (สำคัญ) ====== -->
-<style>
-    .owl-stage-outer {
-        padding-bottom: 20px;
-    }
-</style>
-
-    <!-- Services End -->
-
-    <!-- Back to Top -->
+    <style>
+        .owl-stage-outer {
+            padding-bottom: 20px;
+        }
+    </style>
     <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -277,35 +249,28 @@
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
     
     <script>
-        // เพิ่มไอคอนคุกกี้ขยับขึ้นลง
         document.addEventListener('DOMContentLoaded', function() {
-            // สร้าง container สำหรับไอคอนคุกกี้
             const cookieContainer = document.createElement('div');
             cookieContainer.className = 'cookie-bg';
             document.body.appendChild(cookieContainer);
             
-            // เพิ่มไอคอนคุกกี้ 3 อัน (นิดเดียวพอตามที่ขอ)
             for (let i = 0; i < 3; i++) {
                 const cookie = document.createElement('div');
                 cookie.className = 'floating-cookie';
                 cookie.textContent = '🍪';
                 
-                // ตำแหน่งสุ่ม
-                const leftPos = 10 + (i * 40); // เว้นระยะห่าง
-                const topPos = 20 + (i * 30);  // เว้นระยะห่าง
+                const leftPos = 10 + (i * 40); 
+                const topPos = 20 + (i * 30); 
                 
                 cookie.style.left = `${leftPos}%`;
                 cookie.style.top = `${topPos}%`;
                 
-                // ความเร็วต่างกันเล็กน้อย
                 const duration = 4 + (i * 0.5);
                 const delay = i * 0.3;
                 
